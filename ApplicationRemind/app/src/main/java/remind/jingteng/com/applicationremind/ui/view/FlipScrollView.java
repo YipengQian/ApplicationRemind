@@ -113,7 +113,7 @@ public class FlipScrollView extends ScrollView{
        }
 
     private void animation() {
-        TranslateAnimation translateAnimation = new TranslateAnimation(0, 0, mInnerView.getTop(), rect.top);
+        TranslateAnimation translateAnimation = new TranslateAnimation(0, 0, mInnerView.getTop()-rect.top,0);
         translateAnimation.setDuration(200);
         mInnerView.startAnimation(translateAnimation);
         mInnerView.layout(rect.left, rect.top,rect.right,rect.bottom);
