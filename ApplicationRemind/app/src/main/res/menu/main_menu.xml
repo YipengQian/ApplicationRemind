@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/abc_ic_search_api_mtrl_alpha"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView"
+        android:inputType="textCapWords"
+        android:imeOptions="actionSearch"
+        android:title="搜索" />
+    <item
+        android:id="@+id/action_history"
+        android:orderInCategory="100"
+        android:title="历史"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="设置"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_author"
+        android:orderInCategory="100"
+        android:title="作者"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="100"
+        android:title="关于App"
+        app:showAsAction="never" />
+
+
+</menu>

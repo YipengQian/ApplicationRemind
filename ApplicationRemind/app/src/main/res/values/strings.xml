@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">提醒助手</string>
+    <string name="large_text">
+        \n\n使用说明：\n1.点击信封按钮进入语音提醒列表，可查看已设置提醒列表及时间。\n2.setting设置中可以进行提醒配置。\n
+        \n\n配置说明：\n1.提醒信息设置：以语音识别为基础，点击录入语音进行智能识别为文字，并以“确认”结尾。\n2.设置提醒年月日及精确时间：均以xxxx年xx月xx日xx点xx分。\n3.sett设置：可配置多组闹钟，及设置每组闹钟铃声，及闹钟开启时的背景色。\n
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="please_speak">请说话</string>
+    <string name="speaking">说话中</string>
+    <string name="cancel">取消</string>
+    <string name="start">开始</string>
+    <string name="setting">设置</string>
+
+    <string-array name="pref_theme_list_entries">
+        <item>Dark</item>
+        <item>Light</item>
+    </string-array>
+    <string-array name="pref_theme_list_values">
+        <item>dark</item>
+        <item>light</item>
+    </string-array>
+
+    <string-array name="pref_status_icon_entries">
+        <item>设置闹钟即显示</item>
+        <item>当天有闹钟即显示</item>
+        <item>从不显示</item>
+    </string-array>
+    <string-array name="pref_status_icon_values">
+        <item>prefexist</item>
+        <item>prefcurrent</item>
+        <item>prefnone</item>
+    </string-array>
+    <string-array name="pref_clock_entries">
+        <item>系统闹钟(提醒界面为系统闹钟)</item>
+        <item>本应用后台闹钟(定制界面)</item>
+    </string-array>
+    <string-array name="pref_clock_values">
+        <item>prefsysclock</item>
+        <item>prefserviceclock</item>
+    </string-array>
+
+    <string-array name="pref_example_list_entries">
+        <item>Item1</item>
+        <item>Item2</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>item1</item>
+        <item>item2</item>
+    </string-array>
+
+
+</resources>

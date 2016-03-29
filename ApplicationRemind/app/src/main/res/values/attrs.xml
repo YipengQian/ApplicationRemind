@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<declare-styleable name="FristDefinedView">
+    <attr name="src" format="reference"/>
+    <attr name="textSize" format="dimension|reference"/>
+    <attr name="text" format="string|reference"/>
+    <attr name="textColor" format="color|reference"/>
+    <attr name="border" format="dimension|reference"/>
+    <attr name="borderColor" format="color|reference"/>
+    <attr name="borderAlpha" format="integer"/>
+</declare-styleable>
+
+    
+</resources>

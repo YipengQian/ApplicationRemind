@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <PreferenceCategory android:title="常规设置">
+
+            <com.lb.material_preferences_library.custom_preferences.SwitchPreference
+                android:defaultValue="true"
+                android:key="switchflow"
+                android:title="在线语音助手"
+                app:summaryOff="关闭"
+                app:summaryOn="打开"/>
+
+            <com.lb.material_preferences_library.custom_preferences.SwitchPreference
+                android:defaultValue="true"
+                android:key="switchmsg"
+                android:title="自动扫描短信"
+                app:summaryOff="关闭"
+                app:summaryOn="打开"/>
+
+            <com.lb.material_preferences_library.custom_preferences.ListPreference
+                android:defaultValue="prefexist"
+                android:key="statusbari_con"
+                android:summary="%s"
+                android:title="状态栏闹钟显示图标"
+                app:dialogTitle="状态栏闹钟显示图标"
+                app:entries="@array/pref_status_icon_entries"
+                app:entryValues="@array/pref_status_icon_values"/>
+            <com.lb.material_preferences_library.custom_preferences.ListPreference
+                android:defaultValue="prefsysclock"
+                android:key="clock"
+                android:summary="%s"
+                android:title="闹钟选择"
+                app:dialogTitle="请选择系统或本应用闹钟"
+                app:entries="@array/pref_clock_entries"
+                app:entryValues="@array/pref_clock_values"/>
+            <com.lb.material_preferences_library.custom_preferences.Preference
+                android:title="密码保护"/>
+            <com.lb.material_preferences_library.custom_preferences.Preference
+                android:title="更换主题"/>
+
+
+
+        </PreferenceCategory>
+    <PreferenceCategory android:title="其他">
+        <com.lb.material_preferences_library.custom_preferences.Preference
+            android:title="用户帮助"/>
+        <com.lb.material_preferences_library.custom_preferences.Preference
+            android:title="检测更新"/>
+        <com.lb.material_preferences_library.custom_preferences.Preference
+            android:title="意见反馈"/>
+        <com.lb.material_preferences_library.custom_preferences.Preference
+            android:title="应用评分"/>
+
+
+        </PreferenceCategory>
+
+
+</PreferenceScreen>

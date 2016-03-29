@@ -1,0 +1,17 @@
+<resources>>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <!--<style name="ToolBarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar" >-->
+        <!--<item name="android:textColorPrimary">@android:color/white</item>-->
+        <!--&lt;!&ndash;<item name="android:textColorSecondary">@android:color/white</item>&ndash;&gt;-->
+        <!--&lt;!&ndash;<item name="android:textCursorDrawable">@drawable/cursor_drawable</item>&ndash;&gt;-->
+
+    <!--</style>-->
+    <!--<item name="android:textCursorDrawable">@drawable/cursor_drawable</item>-->
+</resources>
