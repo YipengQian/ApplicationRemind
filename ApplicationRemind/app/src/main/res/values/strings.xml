@@ -1,8 +1,7 @@
 <resources>
     <string name="app_name">提醒助手</string>
     <string name="large_text">
-        \n\n使用说明：\n1.点击信封按钮进入语音提醒列表，可查看已设置提醒列表及时间。\n2.setting设置中可以进行提醒配置。\n
-        \n\n配置说明：\n1.提醒信息设置：以语音识别为基础，点击录入语音进行智能识别为文字，并以“确认”结尾。\n2.设置提醒年月日及精确时间：均以xxxx年xx月xx日xx点xx分。\n3.sett设置：可配置多组闹钟，及设置每组闹钟铃声，及闹钟开启时的背景色。\n
+       均以xxxx年xx月xx日xx点xx分。\n3.sett设置：可配置多组闹钟，及设置每组闹钟铃声，及闹钟开启时的背景色。\n
     </string>
     <string name="action_settings">Settings</string>
     <string name="please_speak">请说话</string>

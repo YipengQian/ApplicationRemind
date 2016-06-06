@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/app/src/main/java/remind/jingteng/com/applicationremind/utils/SnackbarUtils.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/anim" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_done_white.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_edit_white.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-v21" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-v21/main_bg.xml" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-v21/main_bg_grey.xml" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-v21/white_alpha_item_background.xml" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_done_white.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_edit_white.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_done_white.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_edit_white.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/toolbar_layout.xml" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/widget_dialog_progress.xml" charset="GBK" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

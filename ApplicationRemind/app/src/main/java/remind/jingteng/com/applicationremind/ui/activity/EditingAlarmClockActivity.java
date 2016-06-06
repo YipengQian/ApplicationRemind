@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -26,12 +27,13 @@ import butterknife.Bind;
 import remind.jingteng.com.applicationremind.App;
 import remind.jingteng.com.applicationremind.R;
 import remind.jingteng.com.applicationremind.ui.base.BaseActivity;
+import remind.jingteng.com.applicationremind.ui.view.GestureBackLinearLayout;
 import remind.jingteng.com.applicationremind.utils.DialogUtils;
 
 /**
  * Created by qianyipeng on 2016/3/7.
  */
-public class EditingAlarmClockActivity extends BaseActivity implements View.OnClickListener {
+public class EditingAlarmClockActivity extends BaseActivity implements View.OnClickListener, GestureBackLinearLayout.GestureBackListener {
     @Bind(R.id.ll_clock_period)
     LinearLayout ll_clock_period;
     @Bind(R.id.ll_setting)
@@ -42,6 +44,8 @@ public class EditingAlarmClockActivity extends BaseActivity implements View.OnCl
     LinearLayout ll_small_sleep;
     @Bind(R.id.ll_title)
     LinearLayout ll_title;
+    @Bind(R.id.gbll_back)
+    GestureBackLinearLayout gbll_back;
     @Bind(R.id.timePicker)
     TimePicker timePicker;
 
@@ -77,6 +81,7 @@ public class EditingAlarmClockActivity extends BaseActivity implements View.OnCl
             ll_setting_voice.setOnClickListener(this);
             ll_small_sleep.setOnClickListener(this);
             ll_title.setOnClickListener(this);
+            gbll_back.setGestureBackListener(this);
     }
 
     private void initDatePicker() {
@@ -186,7 +191,9 @@ public class EditingAlarmClockActivity extends BaseActivity implements View.OnCl
                 .setGravity(Gravity.BOTTOM)
                 .setHeader(textView)
                 .setFooter(contentView)
-                .setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, new String[]{ "sdfsdf", "sdfsdf", "sdfsdf", "sdfsdf"}))
+                .setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, new String[]{"sdfsdf", "sdfsdf", "sdfsdf", "sdfsdf"}))
+//                .setContentWidth(ViewGroup.LayoutParams.MATCH_PARENT)
+//                .setContentHeight(ViewGroup.LayoutParams.MATCH_PARENT)
                 .setCancelable(true)
                 .setOnDismissListener(new OnDismissListener() {
                     @Override
@@ -226,4 +233,8 @@ public class EditingAlarmClockActivity extends BaseActivity implements View.OnCl
         activity.startActivity(new Intent(App.getInstance(), EditingAlarmClockActivity.class));
     }
 
+    @Override
+    public void setBack() {
+        this.finish();
+    }
 }
