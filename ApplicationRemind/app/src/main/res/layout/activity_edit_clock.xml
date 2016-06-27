@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ImageView
+        android:id="@+id/img"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 <remind.jingteng.com.applicationremind.ui.view.GestureBackLinearLayout
     android:id="@+id/gbll_back"
-    xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -15,6 +27,16 @@
         android:layout_gravity="center_horizontal"
         android:measureAllChildren="false"
         android:timePickerMode="clock" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <EditText
+            android:id="@+id/et"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:hint="输入测试"/>
+
+    </RelativeLayout>
     <LinearLayout
         android:id="@+id/ll_title"
         android:layout_width="match_parent"
@@ -145,3 +167,5 @@
             android:textColor="@color/black"/>
     </LinearLayout>
 </remind.jingteng.com.applicationremind.ui.view.GestureBackLinearLayout>
+    </ScrollView>
+</FrameLayout>

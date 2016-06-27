@@ -30,6 +30,10 @@ allprojects {
     }
 }
 
+repositories {
+    maven { url 'https://github.com/500px/500px-android-blur/raw/master/releases/' }
+}
+
 dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.1.1'
@@ -50,4 +54,7 @@ dependencies {
     compile 'io.reactivex:rxandroid:1.1.0'
     compile 'io.reactivex:rxjava:1.1.0'
     compile 'com.orhanobut:dialogplus:1.11@aar'
+    compile 'com.fivehundredpx:blurringview:1.0.0'
+    compile 'jp.wasabeef:blurry:2.0.2'
+    compile 'me.yokeyword:indexablestickylistview:0.6.1'
 }

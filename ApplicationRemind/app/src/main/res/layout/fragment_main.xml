@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -17,12 +18,14 @@
         app:tabSelectedTextColor="@android:color/darker_gray"
         app:tabTextColor="@color/white"
         />
+
     <android.support.v4.view.ViewPager
         android:id="@+id/vp_content"
         android:layout_width="fill_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         />
+
     </LinearLayout>
 
     <android.support.design.widget.FloatingActionButton
@@ -30,7 +33,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/fab_margin"
-        android:src="@drawable/ic_edit_white"
+        android:src="@drawable/banner"
+        android:scaleType="fitXY"
         app:layout_anchorGravity="bottom|end"
         app:backgroundTint="?attr/colorPrimary"
         app:rippleColor="?attr/colorPrimaryDark"

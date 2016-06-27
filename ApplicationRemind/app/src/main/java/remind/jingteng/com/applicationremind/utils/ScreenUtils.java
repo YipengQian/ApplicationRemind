@@ -1,5 +1,6 @@
 package remind.jingteng.com.applicationremind.utils;
 
+import android.app.Activity;
 import android.content.Context;
 
 public class ScreenUtils {
@@ -47,4 +48,5 @@ public class ScreenUtils {
 	public static int getScreentHeight(Context context) {
 		return context.getResources().getDisplayMetrics().heightPixels;
 	}
+
 }

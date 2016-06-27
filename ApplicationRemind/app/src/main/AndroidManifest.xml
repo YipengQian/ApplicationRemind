@@ -30,6 +30,7 @@
         </activity>
 
         <activity android:name="remind.jingteng.com.applicationremind.ui.activity.RemindPreferenceActivity"/>
-        <activity android:name="remind.jingteng.com.applicationremind.ui.activity.EditingAlarmClockActivity"/>
+        <activity android:name="remind.jingteng.com.applicationremind.ui.activity.EditingAlarmClockActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize"/>
     </application>
 </manifest>

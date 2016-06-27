@@ -1,5 +1,6 @@
 package remind.jingteng.com.applicationremind.ui.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import android.support.design.widget.FloatingActionButton;
@@ -14,10 +15,12 @@ import android.support.design.widget.TabLayout;
 import java.util.ArrayList;
 
 import butterknife.Bind;
+import remind.jingteng.com.applicationremind.App;
 import remind.jingteng.com.applicationremind.R;
 import remind.jingteng.com.applicationremind.adapter.MainViewPagerAdapter;
 import remind.jingteng.com.applicationremind.ui.activity.EditingAlarmClockActivity;
 import remind.jingteng.com.applicationremind.ui.base.BaseFragment;
+import remind.jingteng.com.applicationremind.utils.BlurBuilder;
 
 /**
  * Created by qianyipeng on 2016/3/2.
@@ -70,6 +73,10 @@ public class MainFragment  extends BaseFragment implements View.OnClickListener 
 
     @Override
     public void onClick(View v) {
-        EditingAlarmClockActivity.launch(getActivity());
+        BlurBuilder.snapShotWithoutStatusBar(getActivity());
+        startActivity(new Intent(App.getInstance(), EditingAlarmClockActivity.class));
+                 getActivity().overridePendingTransition(
+                         android.R.anim.fade_in,
+                         R.anim.activity_exit_anim);
     }
 }

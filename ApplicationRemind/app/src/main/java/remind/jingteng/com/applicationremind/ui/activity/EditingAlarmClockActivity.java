@@ -12,6 +12,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.TimePicker;
@@ -28,6 +29,7 @@ import remind.jingteng.com.applicationremind.App;
 import remind.jingteng.com.applicationremind.R;
 import remind.jingteng.com.applicationremind.ui.base.BaseActivity;
 import remind.jingteng.com.applicationremind.ui.view.GestureBackLinearLayout;
+import remind.jingteng.com.applicationremind.utils.BlurBuilder;
 import remind.jingteng.com.applicationremind.utils.DialogUtils;
 
 /**
@@ -48,6 +50,8 @@ public class EditingAlarmClockActivity extends BaseActivity implements View.OnCl
     GestureBackLinearLayout gbll_back;
     @Bind(R.id.timePicker)
     TimePicker timePicker;
+    @Bind(R.id.img)
+    ImageView img;
 
     // 定义5个记录当前时间的变量
     private int year;
@@ -73,8 +77,21 @@ public class EditingAlarmClockActivity extends BaseActivity implements View.OnCl
         mToolbar.setTitle("编辑闹钟");
         timePicker.setIs24HourView(true);
         initDatePicker();
+        applyBlur();
     }
-
+    private void applyBlur() {
+        img.setImageBitmap(BlurBuilder.blur(img));
+                 if (BlurBuilder.isBlurFlag()) {
+                     img.setVisibility(View.VISIBLE);
+                    }
+            }
+    @Override
+         public void finish() {
+                super.finish();
+                BlurBuilder.recycle();
+                 overridePendingTransition(R.anim.activity_exit_anim,
+                         android.R.anim.fade_out);
+            }
     private void initEvent() {
             ll_clock_period.setOnClickListener(this);
             ll_setting.setOnClickListener(this);
